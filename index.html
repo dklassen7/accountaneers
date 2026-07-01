@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>accountaneers – Unternehmerberatung, Coaching & Buchhaltung für Selbständige, KMU & Start-ups</title>
+<meta name="description" content="accountaneers – dein Unternehmerberater. Persönliche Beratung, Business-Coaching, Existenzgründung und vorbereitende Buchhaltung für Selbständige, KMU und Start-ups. Klassische Kompetenz trifft moderne Methoden." />
+<meta name="keywords" content="Unternehmerberatung, Business Coaching, Existenzgründung, Buchhaltung, Selbständige, KMU, Start-ups, Unternehmensberatung, Gründungsberatung, Steuer- und Finanzfragen" />
+<meta name="author" content="Accountaneers UG (haftungsbeschränkt)" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://www.accountaneers.de/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:site_name" content="accountaneers" />
+<meta property="og:title" content="accountaneers – Dein Unternehmerberater für Selbständige, KMU & Start-ups" />
+<meta property="og:description" content="Persönliche Beratung, Business-Coaching, Existenzgründung und vorbereitende Buchhaltung. Klassische Kompetenz trifft moderne Methoden." />
+<meta property="og:url" content="https://www.accountaneers.de/" />
+<meta property="og:image" content="https://www.accountaneers.de/assets/logo-farbe.png" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="accountaneers – Dein Unternehmerberater" />
+<meta name="twitter:description" content="Persönliche Beratung, Coaching und Buchhaltung für Selbständige, KMU und Start-ups." />
+<meta name="twitter:image" content="https://www.accountaneers.de/assets/logo-farbe.png" />
+
+<meta name="theme-color" content="#1D2F52" />
+<link rel="icon" type="image/png" href="assets/icon.png" />
+<link rel="apple-touch-icon" href="assets/icon.png" />
+
+<!-- Fonts: Hanken Grotesk (Headlines) + Roboto (Fließtext) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "accountaneers",
+  "legalName": "Accountaneers UG (haftungsbeschränkt)",
+  "description": "Unternehmerberatung, Business-Coaching, Existenzgründung und vorbereitende Buchhaltung für Selbständige, KMU und Start-ups.",
+  "url": "https://www.accountaneers.de",
+  "image": "https://www.accountaneers.de/assets/logo-farbe.png",
+  "slogan": "Dein Unternehmerberater",
+  "areaServed": "DE",
+  "knowsAbout": ["Unternehmensberatung", "Business Coaching", "Existenzgründung", "Vorbereitende Buchhaltung", "Unternehmenspsychologie"],
+  "priceRange": "€€"
+}
+</script>
+
+<style>
+  :root{
+    --navy:#1D2F52;
+    --teal:#299198;
+    --teal-dark:#1F787D;
+    --gold:#E0922D;
+    --gold-dark:#C17A1C;
+    --ink:#1E2833;
+    --slate:#6B7685;
+    --cream:#F6F2E9;
+    --white:#FFFFFF;
+    --black:#141414;
+    --maxw:1160px;
+    --radius:16px;
+    --shadow:0 18px 50px -22px rgba(29,47,82,.55);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{
+    scroll-behavior:smooth;
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+  }
+  body{
+    font-family:'Roboto',system-ui,-apple-system,'Segoe UI',sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.7;
+    overflow-x:hidden;
+    width:100%;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+  }
+  h1,h2,h3,h4,.font-head{font-family:'Hanken Grotesk',sans-serif;line-height:1.12;letter-spacing:-.01em;overflow-wrap:break-word;word-wrap:break-word}
+  a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(41,145,152,.2)}
+  img{max-width:100%;height:auto;display:block}
+  /* Sticky-Header-Offset für Anker-Sprünge */
+  section[id]{scroll-margin-top:88px}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important;animation:none !important}
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .accent{color:var(--gold)}
+  .teal{color:var(--teal)}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+    font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:1rem;line-height:1.2;
+    padding:.9rem 1.7rem;border-radius:999px;cursor:pointer;border:2px solid transparent;
+    -webkit-appearance:none;appearance:none;text-align:center;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+  }
+  .btn-gold{background:var(--gold);color:var(--navy)}
+  .btn-gold:hover{background:var(--gold-dark);color:#fff;transform:translateY(-2px);box-shadow:0 12px 28px -12px rgba(224,146,45,.7)}
+  .btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover{background:var(--teal-dark);transform:translateY(-2px)}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(29,47,82,.08);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .nav-logo img{height:38px;width:auto}
+  .nav-links{display:flex;gap:2rem;align-items:center;font-family:'Hanken Grotesk',sans-serif;font-weight:600}
+  .nav-links a{color:var(--navy);font-size:.98rem;transition:color .15s}
+  .nav-links a:hover{color:var(--teal)}
+  .nav-cta{padding:.6rem 1.3rem !important;font-size:.95rem !important}
+  .menu-toggle{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px}
+  .menu-toggle span{width:26px;height:2.5px;background:var(--navy);border-radius:2px;transition:.3s}
+
+  /* Hero */
+  .hero{
+    position:relative;overflow:hidden;
+    background:
+      radial-gradient(1100px 520px at 82% -12%, rgba(41,145,152,.42), transparent 60%),
+      radial-gradient(760px 420px at 8% 115%, rgba(224,146,45,.20), transparent 60%),
+      linear-gradient(160deg,#1D2F52 0%, #182848 55%, #12213d 100%);
+    color:#fff;
+  }
+  .hero .wrap{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;
+    padding-top:86px;padding-bottom:96px;
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.55rem;
+    font-family:'Hanken Grotesk',sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    font-size:.78rem;color:var(--gold);margin-bottom:22px;
+  }
+  .eyebrow::before{content:"";width:30px;height:2px;background:var(--gold)}
+  .hero h1{font-size:clamp(2.4rem,5vw,3.7rem);font-weight:800;margin-bottom:22px}
+  .hero h1 .accent{display:inline}
+  .hero p.lead{font-size:1.16rem;color:rgba(255,255,255,.82);max-width:35rem;margin-bottom:34px}
+  .hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+  .hero-badges{display:flex;gap:26px;margin-top:44px;flex-wrap:wrap}
+  .hero-badges div{display:flex;flex-direction:column}
+  .hero-badges b{font-family:'Hanken Grotesk',sans-serif;font-size:1.7rem;font-weight:800;color:#fff}
+  .hero-badges span{font-size:.85rem;color:rgba(255,255,255,.65)}
+  .hero-visual{display:flex;justify-content:center;align-items:center}
+  .hero-stack{display:flex;flex-direction:column;gap:20px;width:100%;max-width:380px}
+  .hero-photo{
+    border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.16);
+    box-shadow:0 24px 60px -28px rgba(0,0,0,.7);
+  }
+  .hero-photo img{width:100%;height:250px;object-fit:cover;display:block}
+  .hero-visual .card{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+    border-radius:26px;padding:34px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);width:100%;
+  }
+  .hero-visual .card img.card-mark{height:130px;width:auto;display:block;margin:6px auto 24px;filter:drop-shadow(0 10px 22px rgba(0,0,0,.35))}
+  .hero-visual .card h3{font-size:1.25rem;color:#fff;margin-bottom:10px;text-align:center}
+  .hero-visual .card p{text-align:center;color:rgba(255,255,255,.72);font-size:.96rem}
+  .hero-visual ul{list-style:none;margin-top:22px;display:grid;gap:12px}
+  .hero-visual li{display:flex;gap:10px;align-items:flex-start;font-size:.95rem;color:rgba(255,255,255,.9)}
+  .hero-visual li svg{flex:none;margin-top:3px}
+
+  /* Section base */
+  section{padding:96px 0}
+  .sec-head{max-width:44rem;margin:0 auto 60px;text-align:center}
+  .sec-head .eyebrow{color:var(--teal)}
+  .sec-head .eyebrow::before{background:var(--teal)}
+  .sec-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);font-weight:800;color:var(--navy);margin-bottom:16px}
+  .sec-head p{font-size:1.1rem;color:var(--slate)}
+
+  /* Trust / values */
+  .values{background:var(--cream)}
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .val-card{
+    background:#fff;border-radius:var(--radius);padding:32px 26px;
+    border:1px solid rgba(29,47,82,.07);box-shadow:0 8px 24px -18px rgba(29,47,82,.4);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .val-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .val-ic{
+    width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--teal),var(--teal-dark));margin-bottom:20px;
+  }
+  .val-card h3{font-size:1.16rem;color:var(--navy);margin-bottom:10px}
+  .val-card p{font-size:.97rem;color:var(--slate)}
+
+  /* Services */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .svc{
+    position:relative;border-radius:var(--radius);padding:0;
+    background:#fff;border:1px solid rgba(29,47,82,.09);overflow:hidden;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s;
+  }
+  .svc::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;z-index:3;background:linear-gradient(90deg,var(--teal),var(--gold))}
+  .svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+  .svc-img{height:196px;overflow:hidden;position:relative}
+  .svc-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,47,82,0) 55%,rgba(29,47,82,.18) 100%)}
+  .svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .svc:hover .svc-img img{transform:scale(1.06)}
+  .svc-body{padding:28px 30px 34px}
+  .svc .num{font-family:'Hanken Grotesk',sans-serif;font-weight:800;font-size:.9rem;color:var(--gold);letter-spacing:.1em}
+  .svc h3{font-size:1.3rem;color:var(--navy);margin:14px 0 12px}
+  .svc p{color:var(--slate);font-size:.98rem;margin-bottom:16px}
+  .svc ul{list-style:none;display:grid;gap:9px}
+  .svc li{display:flex;gap:9px;font-size:.94rem;color:var(--ink)}
+  .svc li svg{flex:none;margin-top:4px}
+
+  /* About split */
+  .about{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+  .about::after{content:"";position:absolute;right:-140px;top:-140px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(41,145,152,.35),transparent 70%)}
+  .about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
+  .about .eyebrow{color:var(--gold)}
+  .about .eyebrow::before{background:var(--gold)}
+  .about h2{font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:800;margin-bottom:22px}
+  .about p{color:rgba(255,255,255,.82);margin-bottom:18px;font-size:1.05rem}
+  .about .feat{display:grid;gap:18px;margin-top:12px}
+  .about .feat li{list-style:none;display:flex;gap:14px;align-items:flex-start}
+  .about .feat .fi{flex:none;width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.09);display:flex;align-items:center;justify-content:center}
+  .about .feat b{font-family:'Hanken Grotesk',sans-serif;display:block;margin-bottom:2px;color:#fff}
+  .about .feat span{color:rgba(255,255,255,.72);font-size:.96rem}
+  .quote-card{
+    background:linear-gradient(150deg,rgba(255,255,255,.09),rgba(255,255,255,.03));
+    border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:40px;
+  }
+  .quote-card .mark{font-family:'Hanken Grotesk',sans-serif;font-size:4rem;line-height:.6;color:var(--gold);height:36px}
+  .quote-card blockquote{font-family:'Hanken Grotesk',sans-serif;font-size:1.5rem;font-weight:600;color:#fff;margin:14px 0 22px}
+  .quote-card .who{display:flex;align-items:center;gap:14px}
+  .quote-card .who .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-dark));display:flex;align-items:center;justify-content:center;font-family:'Hanken Grotesk',sans-serif;font-weight:800;color:var(--navy)}
+  .quote-card .who b{color:#fff;font-family:'Hanken Grotesk',sans-serif}
+  .quote-card .who span{color:rgba(255,255,255,.6);font-size:.88rem}
+
+  /* Process */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step}
+  .step{position:relative;padding:30px 24px;border-radius:var(--radius);background:var(--cream)}
+  .step .n{width:46px;height:46px;border-radius:12px;background:var(--navy);color:#fff;font-family:'Hanken Grotesk',sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-bottom:18px}
+  .step h3{color:var(--navy);font-size:1.14rem;margin-bottom:8px}
+  .step p{color:var(--slate);font-size:.95rem}
+
+  /* CTA band */
+  .cta-band{
+    background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff;text-align:center;
+  }
+  .cta-band h2{font-size:clamp(1.8rem,3.2vw,2.5rem);font-weight:800;margin-bottom:16px}
+  .cta-band p{font-size:1.12rem;color:rgba(255,255,255,.9);max-width:38rem;margin:0 auto 30px}
+
+  /* Contact */
+  .contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  .contact-info h2{font-size:clamp(1.9rem,3.2vw,2.5rem);color:var(--navy);font-weight:800;margin-bottom:18px}
+  .contact-info p{color:var(--slate);margin-bottom:30px;font-size:1.05rem}
+  .ci-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:22px}
+  .ci-item .ic{flex:none;width:48px;height:48px;border-radius:12px;background:var(--cream);display:flex;align-items:center;justify-content:center}
+  .ci-item b{font-family:'Hanken Grotesk',sans-serif;color:var(--navy);display:block}
+  .ci-item span,.ci-item a{color:var(--slate);font-size:.97rem}
+  .ci-item a:hover{color:var(--teal)}
+  form{background:#fff;border:1px solid rgba(29,47,82,.1);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow)}
+  .field{margin-bottom:18px}
+  .field label{font-family:'Hanken Grotesk',sans-serif;font-weight:600;font-size:.92rem;color:var(--navy);display:block;margin-bottom:7px}
+  .field input,.field textarea{
+    width:100%;max-width:100%;padding:.85rem 1rem;border:1.5px solid #e2e2e2;border-radius:10px;
+    font-family:'Roboto',sans-serif;font-size:16px;color:var(--ink);background:#fbfbfa;
+    -webkit-appearance:none;appearance:none;transition:border-color .15s, box-shadow .15s;
+  }
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(41,145,152,.15)}
+  .field textarea{min-height:130px;resize:vertical}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:.86rem;color:var(--slate);margin-bottom:20px}
+  .consent input{margin-top:4px}
+  form .btn{width:100%;justify-content:center}
+  .form-note{font-size:.8rem;color:var(--slate);margin-top:14px;text-align:center}
+
+  /* Footer */
+  footer{background:var(--ink);color:rgba(255,255,255,.75);padding:64px 0 30px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  footer img.flogo{height:40px;margin-bottom:18px}
+  footer p{font-size:.94rem;color:rgba(255,255,255,.6);max-width:24rem}
+  footer h4{font-family:'Hanken Grotesk',sans-serif;color:#fff;font-size:1rem;margin-bottom:16px}
+  footer ul{list-style:none;display:grid;gap:10px}
+  footer ul a{font-size:.94rem;color:rgba(255,255,255,.7);transition:color .15s}
+  footer ul a:hover{color:var(--gold)}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem;color:rgba(255,255,255,.5)}
+  .foot-bottom a:hover{color:var(--gold)}
+
+  /* Responsive */
+  /* Kleiner Desktop / Tablet quer */
+  @media(max-width:1080px){
+    .wrap{padding:0 22px}
+    .hero .wrap{gap:40px}
+  }
+  @media(max-width:900px){
+    .hero .wrap{grid-template-columns:1fr;gap:44px;padding-top:60px;padding-bottom:70px}
+    .hero-visual{order:-1}
+    .about .wrap{grid-template-columns:1fr;gap:40px}
+    .contact .wrap{grid-template-columns:1fr;gap:36px}
+    .grid-4{grid-template-columns:repeat(2,1fr)}
+    .grid-3{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    section{padding:70px 0}
+    .nav-links{
+      position:fixed;inset:74px 0 auto 0;background:#fff;flex-direction:column;gap:0;
+      padding:8px 24px 24px;border-bottom:1px solid rgba(29,47,82,.1);
+      transform:translateY(-140%);transition:transform .3s ease;box-shadow:0 20px 40px -20px rgba(0,0,0,.25)
+    }
+    .nav-links.open{transform:translateY(0)}
+    .nav-links a{width:100%;padding:14px 0;border-bottom:1px solid rgba(29,47,82,.07)}
+    .nav-links .nav-cta{margin-top:12px;text-align:center;justify-content:center}
+    .menu-toggle{display:flex}
+  }
+  /* Portrait-Tablet / großes Phone */
+  @media(max-width:680px){
+    .grid-3{grid-template-columns:1fr}
+    .grid-4{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    .sec-head{margin-bottom:44px}
+    .svc-img{height:210px}
+  }
+  /* Phone */
+  @media(max-width:560px){
+    section{padding:56px 0}
+    .wrap{padding:0 18px}
+    .hero h1{font-size:2.1rem}
+    .hero-badges{gap:16px}
+    .hero-badges b{font-size:1.45rem}
+    .hero-cta .btn,.cta-band .btn{width:100%}
+    form{padding:26px 20px}
+    .quote-card{padding:28px 24px}
+    .quote-card blockquote{font-size:1.3rem}
+    .foot-bottom{flex-direction:column;gap:6px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="nav-logo" aria-label="accountaneers Startseite">
+      <img src="assets/logo-farbe.png" alt="accountaneers Logo" />
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="btn btn-gold nav-cta">Erstgespräch sichern</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <span class="eyebrow">Dein Unternehmerberater</span>
+      <h1>Dein starker Partner für <span class="accent">Dein Business</span> – von der Idee bis zum Erfolg.</h1>
+      <p class="lead">Persönliche Beratung, Coaching und vorbereitende Buchhaltung für Selbständige, KMU und Start-ups. Wir verbinden klassische Kompetenz mit modernen Methoden – für maßgeschneiderte, langfristig geräuschlose Lösungen.</p>
+      <div class="hero-cta">
+        <a href="#kontakt" class="btn btn-gold">Kostenloses Erstgespräch</a>
+        <a href="#leistungen" class="btn btn-ghost">Unsere Leistungen</a>
+      </div>
+      <div class="hero-badges">
+        <div><b>1:1</b><span>Persönliche Betreuung</span></div>
+        <div><b>360°</b><span>Ganzheitlicher Ansatz</span></div>
+        <div><b>0€</b><span>Unverbindliches Erstgespräch</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-stack">
+      <div class="hero-photo">
+        <img src="assets/hero-team.jpg" alt="Persönliche Beratung bei accountaneers – Team bespricht Kennzahlen am Laptop im Büro in Berlin" onerror="this.closest('.hero-photo').style.display='none'" />
+      </div>
+      <div class="card">
+        <img class="card-mark" src="assets/icon.png" alt="accountaneers Bildmarke" />
+        <h3>Ein Ansprechpartner. Kein Bot.</h3>
+        <p>Live und vor Ort statt Massenabfertigung – KI hilft nur dort, wo sie soll.</p>
+        <ul>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#E0922D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Begleitung ab der ersten Idee
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#E0922D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Flexibel als Berater, Coach & Support
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#E0922D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Unternehmenspsychologie inklusive
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUES ============ -->
+<section class="values" id="warum">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Warum accountaneers</span>
+      <h2>Persönlich, individuell, nachhaltig erfolgreich</h2>
+      <p>Wir verstehen die besonderen Bedürfnisse von Selbständigen und kleinen Unternehmen – gerade in oder sogar vor der Startphase.</p>
+    </div>
+    <div class="grid-4">
+      <div class="val-card">
+        <div class="val-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <h3>Persönliche Betreuung</h3>
+        <p>Direkter Kontakt und individuelle Beratung statt anonymer Massenabfertigung – ein fester Ansprechpartner an deiner Seite.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 18 10 12l4 4 6-7" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 9h5v5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Klassisch &amp; modern</h3>
+        <p>Bewährte Methoden kombiniert mit aktuellen Technologien und Trends – das Beste aus beiden Welten für dein Business.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="#fff" stroke-width="1.8"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <h3>Fiskalische Expertise</h3>
+        <p>Umfassende Kompetenz rund um Steuer- und Finanzfragen für kleine Unternehmer – verständlich erklärt, sauber vorbereitet.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3 3 8l9 5 9-5-9-5Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 12l9 5 9-5M3 16l9 5 9-5" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <h3>Maßgeschneidert</h3>
+        <p>Individuell auf deine Anforderungen zugeschnittene Beratungsansätze – keine Schablonen, sondern echte Lösungen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="leistungen">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Leistungsumfang</span>
+      <h2>Ein Auszug unserer Kompetenzen</h2>
+      <p>Von der Gründung über das Coaching bis zur vorbereitenden Buchhaltung – wir begleiten dich zu fast jedem Schritt deines Unternehmens.</p>
+    </div>
+    <div class="grid-3">
+      <div class="svc">
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1758518730384-be3d205838e8?q=75&w=900&h=620&fit=crop&crop=faces&auto=format" alt="Beratungsgespräch zur Existenzgründung – Händedruck im Büro" loading="lazy" /></div>
+        <div class="svc-body">
+        <span class="num">01 · GRÜNDUNG</span>
+        <h3>Gründung &amp; Firmenaufbau</h3>
+        <p>Wir bringen deine Idee rechtssicher an den Start – Anmeldung, Rechtsform und Aufbau tragfähiger Strukturen.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Aus-, Neugründung &amp; Umfirmierung</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>EU inc., UG, GmbH – auch im Ausland</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Aufbau von Firmenkonstrukten</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Gewerbeanmeldung &amp; Finanzamt</li>
+        </ul>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1758691737083-0e7fdbde0f05?q=75&w=900&h=620&fit=crop&crop=faces&auto=format" alt="Coaching-Gespräch – zwei Personen besprechen sich am Laptop im Büro" loading="lazy" /></div>
+        <div class="svc-body">
+        <span class="num">02 · COACHING</span>
+        <h3>Coaching &amp; Mentoring</h3>
+        <p>Wir stärken dich und dein Team – mit ganzheitlicher Unternehmenspsychologie und praxisnahem Coaching.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Unternehmer-Coaching &amp; Mentorship</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Coaching zur Selbständigkeit</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Mitarbeitermotivation &amp; Motivationstraining</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Mental-Health-Training</li>
+        </ul>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1758691737158-18ffa31c0a46?q=75&w=900&h=620&fit=crop&crop=faces&auto=format" alt="Team bespricht gemeinsam Finanzen und Buchhaltung am Laptop" loading="lazy" /></div>
+        <div class="svc-body">
+        <span class="num">03 · FINANZEN</span>
+        <h3>Finanzen &amp; Buchhaltung</h3>
+        <p>Dein Kommunikations- und Ansprechpartner für alle Steuer- und Finanzfragen – strukturiert und zuverlässig.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Vorbereitende Buchhaltung</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Ansprechpartner für Steuer- &amp; Finanzfragen</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Updates &amp; Analysen</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#299198" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Kommunikations- &amp; Schreibbüro</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:38px;color:var(--slate)">
+      Außerdem: <strong style="color:var(--navy)">Business-Angel</strong>, <strong style="color:var(--navy)">Berater &amp; Beistand gem. § 90 ZPO</strong> (Assessor Consularis) sowie Hilfe und Tipps direkt vom Fach.
+    </p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="ueber-uns">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Geschichte &amp; Mission</span>
+      <h2>Die starke Schulter, die jeder Unternehmer braucht</h2>
+      <p>accountaneers verstehen sich als verlässlicher Partner, damit du dich voll auf dein Business konzentrieren kannst. Durch strukturierte Methoden stellen wir unsere Expertise bereits direkt nach der Formulierung deiner Idee zur Verfügung – von Beginn an.</p>
+      <p>Aus Fragen werden Antworten: Wir nehmen dir die Angst vor Hürden und gehen den Weg gemeinsam mit dir – von der Gewerbeanmeldung bis zur Gründung einer Kapitalgesellschaft.</p>
+      <ul class="feat">
+        <li>
+          <span class="fi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3Z" stroke="#E0922D" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <div><b>Vertrauen &amp; Verlässlichkeit</b><span>Das Fundament jeder guten Beratung – wir stehen dir mit Rat und Tat zur Seite.</span></div>
+        </li>
+        <li>
+          <span class="fi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 20V10M12 20V4M18 20v-6" stroke="#E0922D" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <div><b>Wachstum &amp; Fortschritt</b><span>Für Selbständige, KMU und Start-ups – nachhaltig und mit Weitblick.</span></div>
+        </li>
+        <li>
+          <span class="fi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#E0922D" stroke-width="1.8"/><path d="m8 12 3 3 5-6" stroke="#E0922D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><b>Ganzheitliche Methodik</b><span>Unternehmenspsychologie &amp; moderne Ansätze – wirksam über den gesamten Weg.</span></div>
+        </li>
+      </ul>
+    </div>
+    <div class="quote-card">
+      <div class="mark">„</div>
+      <blockquote>Ein Ansprechpartner, live, vor Ort – kein Bot, kein Automat. Die KI hilft nur dort, wo sie soll und kann.</blockquote>
+      <div class="who">
+        <div class="av">CK</div>
+        <div><b>Christoph-Arthur Keller</b>&nbsp;&nbsp;<span>accountaneer</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="ablauf">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">So arbeiten wir</span>
+      <h2>Dein Weg mit accountaneers</h2>
+      <p>Klar, persönlich und Schritt für Schritt – so begleiten wir dich vom ersten Gespräch bis zum nachhaltigen Erfolg.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Kennenlernen</h3><p>Unverbindliches Erstgespräch – wir hören zu und verstehen dein Vorhaben.</p></div>
+      <div class="step"><div class="n">2</div><h3>Analyse</h3><p>Wir prüfen deine Situation und zeigen Chancen, Hürden und Prioritäten auf.</p></div>
+      <div class="step"><div class="n">3</div><h3>Umsetzung</h3><p>Gemeinsam setzen wir Lösungen um – als Berater, Coach oder direkte Unterstützung.</p></div>
+      <div class="step"><div class="n">4</div><h3>Begleitung</h3><p>Wir bleiben an deiner Seite – flexibel, wann immer du uns brauchst.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Bereit, dich voll auf dein Business zu konzentrieren?</h2>
+    <p>Lerne uns bei einem unverbindlichen Gespräch kennen und erfahre, wie wir deine Herausforderungen gemeinsam meistern.</p>
+    <a href="#kontakt" class="btn btn-gold">Jetzt Erstgespräch vereinbaren</a>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div class="contact-info">
+      <h2>Lass uns gemeinsam starten</h2>
+      <p>Schreib uns oder ruf an – wir melden uns zeitnah bei dir. Persönlich, nah und kompetent.</p>
+      <div class="ci-item">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#299198" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="#299198" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+        <div><b>E-Mail</b><a href="mailto:info@accountaneers.de">info@accountaneers.de</a></div>
+      </div>
+      <div class="ci-item">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" stroke="#299198" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="#299198" stroke-width="1.8"/></svg></span>
+        <div><b>Standort</b><span>Accountaneers UG (haftungsbeschränkt), 10439 Berlin</span></div>
+      </div>
+    </div>
+
+    <form onsubmit="event.preventDefault(); alert('Formular-Versand bitte serverseitig anbinden (Platzhalter).');">
+      <div class="field">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Dein Name" />
+      </div>
+      <div class="field">
+        <label for="email">E-Mail *</label>
+        <input type="email" id="email" name="email" required placeholder="deine@email.de" />
+      </div>
+      <div class="field">
+        <label for="phone">Telefon</label>
+        <input type="tel" id="phone" name="phone" placeholder="Optional" />
+      </div>
+      <div class="field">
+        <label for="msg">Nachricht</label>
+        <textarea id="msg" name="msg" placeholder="Wie können wir dich unterstützen?"></textarea>
+      </div>
+      <label class="consent">
+        <input type="checkbox" required />
+        <span>Ich bin damit einverstanden, dass diese Daten zum Zwecke der Kontaktaufnahme gespeichert und verarbeitet werden. Mir ist bekannt, dass ich meine Einwilligung jederzeit widerrufen kann. *</span>
+      </label>
+      <button type="submit" class="btn btn-navy">Nachricht senden</button>
+      <p class="form-note">* Pflichtfelder. Formular-Versand serverseitig anzubinden.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img class="flogo" src="assets/logo-auf-dunkel.png" alt="accountaneers" />
+        <p>Dein Unternehmerberater – persönliche Beratung, Coaching und vorbereitende Buchhaltung für Selbständige, KMU und Start-ups.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#leistungen">Leistungen</a></li>
+          <li><a href="#ueber-uns">Über uns</a></li>
+          <li><a href="#ablauf">Ablauf</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Accountaneers UG (haftungsbeschränkt). Alle Rechte vorbehalten.</span>
+      <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.accountaneers.de/sitemap.xml
