@@ -578,7 +578,12 @@
       </div>
     </div>
 
-    <form onsubmit="event.preventDefault(); alert('Formular-Versand bitte serverseitig anbinden (Platzhalter).');">
+    <form action="https://formsubmit.co/info@accountaneers.de" method="POST">
+      <input type="hidden" name="_subject" value="Neue Kontaktanfrage über accountaneers.de" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://accountaneers.de/danke.html" />
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
       <div class="field">
         <label for="name">Name *</label>
         <input type="text" id="name" name="name" required placeholder="Dein Name" />
@@ -596,11 +601,11 @@
         <textarea id="msg" name="msg" placeholder="Wie können wir dich unterstützen?"></textarea>
       </div>
       <label class="consent">
-        <input type="checkbox" required />
+        <input type="checkbox" name="einwilligung" value="ja" required />
         <span>Ich bin damit einverstanden, dass diese Daten zum Zwecke der Kontaktaufnahme gespeichert und verarbeitet werden. Mir ist bekannt, dass ich meine Einwilligung jederzeit widerrufen kann. *</span>
       </label>
       <button type="submit" class="btn btn-navy">Nachricht senden</button>
-      <p class="form-note">* Pflichtfelder. Formular-Versand serverseitig anzubinden.</p>
+      <p class="form-note">* Pflichtfelder. Deine Anfrage wird an info@accountaneers.de gesendet.</p>
     </form>
   </div>
 </section>
